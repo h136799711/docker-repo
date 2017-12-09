@@ -7,4 +7,4 @@ mkdir /home/data/mysql & mkdir /home/etc/php & mkdir /home/etc/nginx & mkdir /ho
 
 # 复制
 
-cp -R ./nginx /home/etc/
+cp -R ./nginx /home/etc/ & cp -R ./www /home/
