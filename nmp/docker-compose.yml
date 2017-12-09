@@ -5,7 +5,8 @@ services:
         volumes:
             - "/home/etc/ssl:/etc/ssl"
             - "/home/www:/var/www/html"
-            - "/home/etc/nginx/:/etc/nginx/conf.d"
+            - "/home/etc/nginx/vhost:/etc/nginx/conf.d"
+            - "/home/etc/nginx/nginx.conf:/etc/nginx/nginx.conf"
         ports:
             - "80:80"
             - "443:443"

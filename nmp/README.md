@@ -1,4 +1,7 @@
 Ubuntu 16 下
+需要安装docker  以及 docker-compose  1.17.1
+
+curl -L https://github.com/docker/compose/releases/download/1.17.1/docker-compose-`uname -s`-`uname -m` > docker-compose
 
 ## 创建目录结构
 
