@@ -3,10 +3,10 @@ services:
     web:
         image: nginx:1.13.7
         volumes:
-            - "/home/etc/ssl:/etc/ssl"
-            - "/home/www:/var/www/html"
-            - "/home/etc/nginx/vhost:/etc/nginx/conf.d"
-            - "/home/etc/nginx/nginx.conf:/etc/nginx/nginx.conf"
+            - "/home/dnmp/etc/ssl:/etc/ssl"
+            - "/home/dnmp/www:/var/www/html"
+            - "/home/dnmp/etc/nginx/vhost:/etc/nginx/conf.d"
+            - "/home/dnmp/etc/nginx/nginx.conf:/etc/nginx/nginx.conf"
         ports:
             - "80:80"
             - "443:443"
@@ -21,8 +21,8 @@ services:
         image: hebidu/php-fpm:7.1
         restart: always
         volumes:
-            - "/home/www/:/var/www/html"
-            - "/home/etc/php:/usr/local/etc/php/conf.d"
+            - "/home/dnmp/www/:/var/www/html"
+            - "/home/dnmp/etc/php:/usr/local/etc/php/conf.d"
     myadmin:
         image: phpmyadmin/phpmyadmin
         container_name: phpmyadmin
@@ -48,5 +48,5 @@ services:
         ports:
             - "8076:3306"
         volumes:
-            - "/home/data/mysql:/var/lib/mysql"
-            - "/home/etc/mysql:/etc/mysql/conf.d"
+            - "/home/dnmp/data/mysql:/var/lib/mysql"
+            - "/home/dnmp/etc/mysql:/etc/mysql/conf.d"
