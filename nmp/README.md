@@ -25,6 +25,7 @@ mysql: 8076端口
 
 目录说明
 
+php配置目录 /home/etc/php
 mysql配置目录 /home/etc/mysql
 mysql数据目录 /home/data/mysql
 nginx配置目录 /home/etc/nginx
