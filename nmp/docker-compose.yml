@@ -24,7 +24,7 @@ services:
             - "/home/dnmp/www/:/var/www/html"
             - "/home/dnmp/etc/php:/usr/local/etc/php/conf.d"
     myadmin:
-        image: phpmyadmin/phpmyadmin
+        image: phpmyadmin/phpmyadmin:4.7
         container_name: phpmyadmin
         ports:
             - "8077:80"
@@ -46,7 +46,7 @@ services:
             - MYSQL_USER=${MYSQL_USER}
             - MYSQL_PASSWORD=${MYSQL_PASSWORD}
         ports:
-            - "8076:3306"
+            - "3306:3306"
         volumes:
             - "/home/dnmp/data/mysql:/var/lib/mysql"
             - "/home/dnmp/etc/mysql:/etc/mysql/conf.d"
