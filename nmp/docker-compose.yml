@@ -21,6 +21,7 @@ services:
         restart: always
         volumes:
             - "/home/www/:/var/www/html"
+            - "/home/etc/php:/usr/local/etc/php/conf.d"
     myadmin:
         image: phpmyadmin/phpmyadmin
         container_name: phpmyadmin
