@@ -7,8 +7,8 @@ Ubuntu 16 下
 2. 完成之后进入nmp目录
 
 ```
-mkdir /home/etc & mkdir /home/www & mkdir /home/etc/nginx & mkdir /home/etc/ssl & mkdir /home/etc/nginx/vhost & mkdir /home/etc/mysql
-mkdir /home/www & mkdir /home/data/mysql
+mkdir /home/etc && mkdir /home/www && mkdir /home/etc/php && mkdir /home/etc/nginx && mkdir /home/etc/ssl && mkdir /home/etc/nginx/vhost && mkdir /home/etc/mysql
+mkdir /home/www && mkdir /home/data/mysql &
 ```
 
 ```
