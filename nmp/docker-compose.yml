@@ -31,6 +31,7 @@ services:
         environment:
             - PMA_ARBITRARY=1
             - PMA_HOST=${MYSQL_HOST}
+            - PMA_PORT=${MYSQL_PORT}
         restart: always
         depends_on:
             - mysqldb
