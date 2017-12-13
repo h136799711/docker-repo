@@ -3,10 +3,10 @@ services:
     web:
         image: nginx:1.13.7
         volumes:
-            - "/home/dnmp/etc/ssl:/etc/ssl"
-            - "/home/dnmp/www:/var/www/html"
-            - "/home/dnmp/etc/nginx/vhost:/etc/nginx/conf.d"
-            - "/home/dnmp/etc/nginx/nginx.conf:/etc/nginx/nginx.conf"
+            - "/home/wdg/dnmp/etc/ssl:/etc/ssl"
+            - "/home/wdg/dnmp/www:/var/www/html"
+            - "/home/wdg/dnmp/etc/nginx/vhost:/etc/nginx/conf.d"
+            - "/home/wdg/dnmp/etc/nginx/nginx.conf:/etc/nginx/nginx.conf"
         ports:
             - "80:80"
             - "443:443"
@@ -21,8 +21,8 @@ services:
         image: hebidu/php-fpm:7.1
         restart: always
         volumes:
-            - "/home/dnmp/www/:/var/www/html"
-            - "/home/dnmp/etc/php:/usr/local/etc/php/conf.d"
+            - "/home/wdg/dnmp/www/:/var/www/html"
+            - "/home/wdg/dnmp/etc/php:/usr/local/etc/php/conf.d"
     myadmin:
         image: phpmyadmin/phpmyadmin:4.7
         container_name: phpmyadmin
@@ -49,5 +49,5 @@ services:
         ports:
             - "3306:3306"
         volumes:
-            - "/home/dnmp/data/mysql:/var/lib/mysql"
-            - "/home/dnmp/etc/mysql:/etc/mysql/conf.d"
+            - "/home/wdg/dnmp/data/mysql:/var/lib/mysql"
+            - "/home/wdg/dnmp/etc/mysql:/etc/mysql/conf.d"
