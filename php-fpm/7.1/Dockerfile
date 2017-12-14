@@ -38,4 +38,5 @@ RUN apt-get update && apt-get upgrade -y \
     && pecl install xdebug && docker-php-ext-enable xdebug \
     && pecl install mongodb && docker-php-ext-enable mongodb \
     && pecl install redis && docker-php-ext-enable redis \
-    && yes '' | pecl install imagick && docker-php-ext-enable imagick
+    && yes '' | pecl install imagick && docker-php-ext-enable imagick \
+     && docker-php-ext-enable pdo_mysql
