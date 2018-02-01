@@ -10,16 +10,12 @@ curl -L https://github.com/docker/compose/releases/download/1.17.1/docker-compos
 2. 完成之后进入nmp目录
 
 ```
-mkdir /home/etc && mkdir /home/www && mkdir /home/etc/php && mkdir /home/etc/nginx && mkdir /home/etc/ssl && mkdir /home/etc/nginx/vhost && mkdir /home/etc/mysql
-mkdir /home/www && mkdir /home/data/mysql &
-```
-
-```
-cp ./default.template.conf /home/etc/nginx/
+mkdir /home/etc && mkdir /home/www && mkdir /home/etc/php && mkdir /home/etc/nginx && mkdir /home/etc/ssl && mkdir /home/etc/nginx/vhost && mkdir /home/etc/mysql && mkdir /home/data/mysql
 ```
 
 执行命令
 
+docker-compose up -d
 
 需要开放
 web服务：80, 443   
